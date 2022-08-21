@@ -1,23 +1,29 @@
 :root {
     /*Font text*/
-    --main-font:'roboto',sans-serif;
+    --main-font:"roboto",sans-serif;
     /*Color text*/
     --main-color-text: #212121;
     --accent-color-text: #2196F3;
     --second-color-text: #757575;
     --three-color-text: #FFFFFF;
+    --for-color-text: #000000;
     /*Bg color*/
     --first-bg: #2F303A;
     --second-bg:#F5F4FA;
-
+    --three-bg: #F5F5F5;
+    --for-bg: #EEEEEE;
+    --five-bg: #ECECEC;
 }
-.pages {
+
+
+.page {
     font-family: var(--main-font);
     color: var(--main-color-text);
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.03em;
 }
+
 .link {
     text-decoration: none;
 }
@@ -53,15 +59,21 @@
 .logo-first {
     color: var(--accent-color-text);
 }
+.logo-second {
+color: var(--three-color-text)
+}
 
 .navlist
- {
+{
     font-weight: 500;
     color: var(--main-color-text);
 }
 .navlist:hover,
 .navlist:focus {
     color: var(--accent-color-text);
+}
+.current {
+    color: var(--accent-color-text)
 }
 .hdcontact {
     font-weight: 500;
@@ -71,8 +83,9 @@
 .hdcontact:hover,
 .hdcontact:focus {
     color: var(--accent-color-text);
+
 }
-/*Hero*******************/
+/*Her*/
 .hero,
 .footer {
     background-color: var(--first-bg);
@@ -87,6 +100,9 @@
     color: var(--three-color-text);
 }
 /*Work*/
+.list {
+    list-style-type: none;
+}
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -150,6 +166,9 @@ background-color: var(--second-bg);
     color: var(--second-color-text);
 }
 /*Footer*****************/
+.footer-logo {
+    color: var(--three-color-text);
+}
 .footer-address {
 line-height: 1.71;
 letter-spacing: 0.03em;
@@ -172,6 +191,7 @@ color: var(--accent-color-text);
 }
 
  /*Portfolio*/
+
   .filter-button {
     background: var(--second-bg);
     cursor: pointer;
@@ -183,11 +203,13 @@ color: var(--accent-color-text);
     color: var(--main-color-text);
     font-family: inherit;
   }
+
 .filter-button:hover,
 .filter-button:focus {
     background: var(--accent-color-text);
     color: var(--three-color-text);
 }
+
 .title {
     font-weight: 700;
     font-size: 18px;
